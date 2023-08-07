@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="position: relative; z-index: 0;">
+  <div class="container-fluid">
+  <a class="navbar-brand d-md-none" style="min-height: 50px; opacity: 0;" href="#">
+      <img src="/assets/images/jarticslogo.png"  alt="">
+  </a>
+  <button class="navbar-toggler" style="opacity: 0;">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse" id="navbar">
+      <ul class="navbar-nav mx-auto sfpro-regular" style="opacity: 0;">
+      
+      <li class="nav-item">
+          <a class="nav-link" href="#Nosotros">Nosotros</a>
+      </li>
+      
+      </ul>
+  </div>
+  </div>
+</nav>
+
+<style>
+    /* NAVBAR */
+
+.navbar{
+  background-color: rgb(10, 10, 10);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 100000;
+}
+
+.navbar-toggler{
+  border: 0 !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+  }
+}
+
+.nav-link{
+  transition: letter-spacing 0.5s ease;
+}
+
+.nav-link:hover{
+  letter-spacing: 1px;
+  opacity: 1 !important;
+  color: white !important;
+}
+</style>

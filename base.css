@@ -1,0 +1,379 @@
+
+
+@font-face {
+    font-family: 'San-Francisco-Pro-Regular'; /* Nombre que usarás para referenciar la fuente */
+    src: url('/assets/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'San-Francisco-Thin'; /* Nombre que usarás para referenciar la fuente */
+    src: url('/assets/fonts/SF-Pro-Display-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'San-Francisco-Bold'; /* Nombre que usarás para referenciar la fuente */
+    src: url('/assets/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+}
+
+
+.sfpro-regular{
+    font-family: San-Francisco-Pro-Regular;
+}
+
+.sfpro-thin{
+    font-family: San-Francisco-Thin;
+}
+
+.sfpro-bold{
+    font-family: San-Francisco-Bold;
+}
+
+.font-gradient-1{
+    background: -webkit-linear-gradient(#48d7ff,#0072ff);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-gradient-2{
+    background: linear-gradient(to right, #48d7ff,#0072ff);
+    background: linear-gradient(to right, #ffffff,#410096);
+    background-clip: text;
+    color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.font-gradient-3{
+  background: linear-gradient(to right, #ffbc64,#e08917);
+  background-clip: text;
+  color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.gradient-bg{
+    background-image: linear-gradient(270deg,#00c6ff,#0072ff);
+    background: linear-gradient(175deg, #f0f0f0,#f0f0f0);
+}
+
+.heigh-56{
+    height: 56px;
+}
+
+.letter-spacing-sm{
+    letter-spacing: 1px;
+}
+
+.font-size-sm{
+    font-size: 15px;
+}
+.font-size-md{
+    font-size: 20px;
+}
+
+.font-size-lg{
+    font-size: 25px;
+}
+
+.font-size-xl{
+    font-size: 30px;
+}
+
+.font-size-xxl{
+    font-size: 5vw;
+    line-height: 5.2vw !important;
+}
+
+
+.third-container-1{
+    background-color: rgb(10, 10, 10);
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.body-2 {
+    --space: 10px;
+    display: grid;
+    align-content: center;
+    gap: var(--space);
+    width: 100%;
+    font-family: "Corben", system-ui, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .marquee {
+    --duration: 60s;
+    --gap: var(--space);
+  
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  /*   transform: skewY(3deg); */
+  }
+  
+  .marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /*background-color: red;*/
+    animation: scroll var(--duration) linear infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__group {
+      animation-play-state: paused;
+    }
+  }
+  
+  .marquee__group img {
+    max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: box-shadow 0.4s ease-in-out, border 0.4s ease-in-out !important;
+  }
+
+  .marquee__group img:hover {
+    box-shadow: 0 0 30px #ffffffad; 
+    border: 1px solid rgba(255, 255, 255, 0.877);
+  }
+  
+  
+  
+  .marquee--borders {
+    border-block: 3px solid dodgerblue;
+    padding-block: 0.75rem;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .list-1 {
+      display: block; /* O el valor que desees cuando la pantalla es más pequeña */
+      /* Otros estilos que quieras aplicar cuando la pantalla sea más pequeña */
+    }
+  }
+
+  .list-1 i.fa-check-circle {
+    background: linear-gradient(to right, #ad71fc,#6f00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.section-5{
+    /*background-image: linear-gradient(#a560ff,transparent);*/
+    min-height: 500px;
+    margin-top: 80px;
+}
+
+.watermark_labels{
+    visibility: hidden !important;
+}
+
+.column-span {
+    display: block !important; /* Puedes usar "inline-block" si deseas que tengan el ancho del contenido */
+    margin-bottom: 10px; /* Espacio entre los spans */
+}
+
+.span-3d{
+    color: #f0f0f0;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid rgb(118, 0, 141);
+    border-radius: 5rem;
+    transition: box-shadow 0.4s ease-in-out, border 0.4s ease-in-out !important;
+}
+
+.span-3d:hover{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px #ffffffad; 
+}
+
+.bigger-sm{
+    transition: transform 0.6s ease;
+}
+
+.bigger-sm:hover{
+    transform: scale(1.1);
+}
+
+
+
+.accordion {
+  margin: 2rem 8vw 0rem;
+}
+.accordion-item {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 0;
+  border-radius: 0rem  !important;
+  border: 0px solid red;
+  border-bottom: 1px solid !important;
+  border-color: rgba(255, 255, 255, 0.219) !important;
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  
+}
+.accordion-item-header::after {
+  content: "\02C5";
+  transform: scaleX(2);
+  color: rgb(115, 255, 80);
+  font-size: 12px;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\02C4";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  padding-top: 0;
+  line-height: 1.5rem;
+  /*border-top: 1px solid;
+  border-image: white;*/
+}
+
+
+
+
+
+
+.whatsapp-link {
+  text-decoration: none; /* Elimina la subrayado del enlace */
+  color: #ffffff;
+  transition: color 0.2s ease-in; /* Cambia el color del texto del enlace */ /* Añade negrita al texto del enlace */
+}
+
+/* Cambiar el color del enlace al pasar el ratón por encima */
+.whatsapp-link:hover {
+  color: #77ff65;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .font-size-xxl{
+    font-size: 47px;
+    line-height: 51px !important;
+  }
+
+  .nav-link{
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    margin: 5px;
+  }
+}
+
+
+.brillo-exterior-1{
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(148, 0, 211, 0.8));
+  filter: drop-shadow(0px 0px 10px rgba(148, 0, 211, 0.8));
+}
+
+.hover-up{
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-up:hover{
+  transform: translateY(-10px);
+}
+
+
+/*
+.section-0 {
+  background-image: url("/assets/images/medicina.png");
+  background-position: center 78%;
+  background-repeat: no-repeat;  Evita que la imagen se repita 
+  background-size: cover; Ajusta el tamaño para cubrir el área sin deformarse 
+}  Ajusta la altura
+*/
+
+#apple,
+#twitter,
+#github,
+#facebook {
+  font-size: 8em;
+  
+  color: #fff;
+  
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

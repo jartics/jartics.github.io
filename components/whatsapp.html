@@ -1,0 +1,64 @@
+<div>
+    <input id="social-media-fab" class="social-media-fab" type="checkbox" />
+    <label for="social-media-fab" class="ripple-effect">
+        <a href="https://wa.me/528130829479?text=¡Hola!%20Me%20gustaría%20hacer%20un%20pedido" target="_blank">
+            <div class="social-media-fab-icons">
+                <ion-icon class="mr-3 social-media-fab-default" style="color:rgb(255, 255, 255); transform: scale(1.2)" name="logo-whatsapp"></ion-icon>
+            </div>
+        </a>
+    </label>
+</div>
+
+<style>
+    .social-media-fab {
+	display: none;
+}
+.social-media-fab + label {
+	cursor: pointer;
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	background-color: #77ff65;
+	color: snow;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	z-index: 100;
+	display: flex; /*inline-flex*/
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	transition: all 0.3s ease;
+}
+.social-media-fab + label:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 15px 3px #666;
+}
+.social-media-fab + label:active {
+	transform: scale(1.08);
+	box-shadow: 0px 0px 15px 5px #666;
+}
+.social-media-fab + label .social-media-fab-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social-media-fab + label .social-media-fab-icons i {
+	position: absolute;
+}
+
+.watermark .cover {
+    visibility: hidden !important;
+}
+
+.watermark .cover {
+  opacity: 0 !important;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+ 
+}
+</style>
