@@ -46,7 +46,7 @@
 }
 
 .font-gradient-3{
-  background: linear-gradient(to right, #ffbc64,#e08917);
+  background: linear-gradient(to right, #ffffff 70%,#410096);
   background-clip: text;
   color: transparent;
 -webkit-background-clip: text;
